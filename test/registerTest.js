@@ -139,7 +139,7 @@ describe('register', () => {
 		expect(output).toEqual('test_metric{testLabel="testValue"} 1');
 	});
 
-	it('labeled metrics should take precidence over defaulted', () => {
+	it('labeled metrics should take precedence over defaulted', () => {
 		register.setDefaultLabels({ testLabel: 'testValue' });
 		register.registerMetric({
 			get() {
